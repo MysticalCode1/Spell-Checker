@@ -1,0 +1,5 @@
+file = open("firsttime.txt", "w")
+file.write("this is my first time writing something\n")
+file.write("this is written by python\n")
+print("hello")
+file.close()

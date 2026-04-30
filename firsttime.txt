@@ -1,0 +1,3 @@
+this is my first time writing something
+this is written by python
+Hello i added something
