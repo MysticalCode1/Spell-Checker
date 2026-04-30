@@ -1,2 +1,38 @@
-# Spell-Checker
-📌 Python Spell Checker  A simple Python tool that detects misspelled words in a text file using an English dictionary.  🚀 Features Cleans text using regex Compares words with a dictionary Supports custom words Prints incorrect spellings
+📌 Spell Checker using Python
+
+A simple yet effective spell-checking tool built in Python that identifies incorrectly spelled words in a text file by comparing them against a standard English dictionary.
+
+🚀 Features
+Reads and processes text files (readme.txt.txt)
+Uses a large English word dataset (english_words)
+Cleans input using regular expressions
+Detects and prints misspelled words
+Custom word support (e.g., names, domains like hardik, gmail, com)
+🛠️ Tech Stack
+Python 🐍
+re (Regular Expressions)
+english-words library
+📂 Project Structure
+├── main.py                  # Main script
+├── words.txt                # Custom word list / reference
+├── words_dictionary.json    # Dictionary (optional/extra)
+├── readme.txt.txt           # Input text file
+⚙️ How It Works
+Loads a predefined English dictionary.
+Reads input text and converts it to lowercase.
+Removes special characters using regex.
+Splits the text into words.
+Compares each word with the dictionary + custom word list.
+Prints words that are not found (i.e., misspelled).
+▶️ Usage
+pip install english-words
+python main.py
+📌 Example Output
+Spelled Incorrectly: halo
+Spelled Incorrectly: behavor
+Spelled Incorrectly: helloo
+🎯 Future Improvements
+Suggest correct spellings (like autocorrect)
+GUI interface
+Support for multiple languages
+Real-time spell checking
