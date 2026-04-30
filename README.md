@@ -1,23 +1,26 @@
-import re
+📌 Spell Checker using Python
 
-from english_words import get_english_words_set
-dictionary = get_english_words_set(['web2'], lower=True)
-my_dictionary = {"hardik", "bindal", "gmail", "com"}
-print(f"Total Words: {len(dictionary)}")
+A simple yet effective spell-checking tool built in Python that identifies incorrectly spelled words in a text file by comparing them against a standard English dictionary.
 
-
-with open("words.txt", "r") as final:
- content1 = final.read().lower()
- ready = content1.split()
-
-
-with open("readme.txt.txt", "r") as file:
- content = file.read().lower()
- content = re.sub(r'[^a-z\s]', ' ', content)
-
-words_that_are_in_file = content.split()
-
-
-for word in words_that_are_in_file:
- if word not in ready:
-  print(f"Spelled Incorrectly: {word}")
+🚀 Features
+Reads and processes text files (readme.txt.txt)
+Uses a large English word dataset (english_words)
+Cleans input using regular expressions
+Detects and prints misspelled words
+Custom word support (e.g., names, domains like hardik, gmail, com)
+🛠️ Tech Stack
+Python 🐍
+re (Regular Expressions)
+english-words library
+⚙️ How It Works
+Loads a predefined English dictionary.
+Reads input text and converts it to lowercase.
+Removes special characters using regex.
+Splits the text into words.
+Compares each word with the dictionary + custom word list.
+Prints words that are not found (i.e., misspelled).
+🎯 Future Improvements
+Suggest correct spellings (like autocorrect)
+GUI interface
+Support for multiple languages
+Real-time spell checking
